@@ -6,3 +6,43 @@
 html {
   box-sizing: border-box;
 }
+/*-----body-----*/
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+/*----section-----*/
+section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  border: solid 3px red;
+  flex: 1 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+section div {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+section div img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+section button {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+section button:first-of-type {
+  left: 0;
+}
+section button:last-of-type {
+  right: 0;
+}
